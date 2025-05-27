@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Starting Redirect...</title>
+    <script>
+        // Get HWID from URL query string
+        const params = new URLSearchParams(window.location.search);
+        const hwid = params.get("hwid");
+
+        if (hwid) {
+            // Save HWID to localStorage
+            localStorage.setItem("hwid", hwid);
+
+            // Redirect to your Linkvertise link
+            window.location.href = "https://direct-link.net/1349247/tfwJJnmVSInM";
+        } else {
+            document.body.innerHTML = "<h3>Error: HWID missing in URL.</h3>";
+        }
+    </script>
+</head>
+<body>
+    <p>Preparing your key, please wait...</p>
+</body>
+</html>
