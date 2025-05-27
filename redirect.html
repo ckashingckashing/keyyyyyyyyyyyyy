@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+        // Read HWID from localStorage
+        const hwid = localStorage.getItem("hwid");
+
+        if (hwid) {
+            // Redirect to KeyGuardian URL with the HWID param
+            const keyGuardianUrl = `https://keyguardian.org/a/4712?id=${hwid}`;
+            window.location.href = keyGuardianUrl;
+        } else {
+            document.body.innerHTML = "<h3>Error: HWID not found in storage.</h3>";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting you to your key...</p>
+</body>
+</html>
